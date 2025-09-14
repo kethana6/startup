@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Alex Johnson</title>
+    <style>
+        body {
+            font-family:Inter, sans-serif;
+            margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #fff;
+    }
+
+    header {
+      padding: 20px 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1a73e8;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Services Section */
+    .services {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .services h1 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .services p {
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .icon {
+      font-size: 22px;
+      margin-bottom: 14px;
+      display: inline-block;
+      padding: 12px;
+      border-radius: 10px;
+    }
+
+    .icon.blue { background: #e6f0ff; color: #1a73e8; }
+    .icon.purple { background: #f0e6ff; color: #8e44ad; }
+    .icon.green { background: #e6fff3; color: #27ae60; }
+    .icon.orange { background: #fff5e6; color: #e67e22; }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .card ul li {
+      font-size: 16px;
+      margin: 5px 0;
+      color: #333;
+    }
+
+    .card ul li::before {
+      content: "✔";
+      margin-right: 8px;
+      color: #27ae60;
+      font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>&lt;/&gt; Alex Johnson</h1>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h1>Services | Offer</h1>
+    <p>Comprehensive digital solutions to accelerate your business growth and streamline operations</p>
+
+    <div class="service-cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="icon blue">💻</div>
+        <h3>Website Development</h3>
+        <p>Custom websites and web applications built with modern technologies for optimal performance and user experience.</p>
+        <ul>
+          <li>Responsive Design</li>
+          <li>SEO Optimization</li>
+          <li>Fast Loading</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="icon purple">🤖</div>
+        <h3>AI Agents</h3>
+        <p>Intelligent AI-powered solutions to automate customer service, data analysis, and business processes.</p>
+        <ul>
+          <li>Chatbots</li>
+          <li>Data Processing</li>
+          <li>Custom AI Models</li>
+        </ul>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="icon green">⚙️</div>
+        <h3>Automation</h3>
+        <p>Streamline your workflows with custom automation solutions that save time and reduce manual errors.</p>
+        <ul>
+          <li>Workflow Automation</li>
+          <li>API Integration</li>
+          <li>Process Optimization</li>
+        </ul>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="icon orange">📈</div>
+        <h3>Digital Marketing</h3>
+        <p>Data-driven marketing strategies to increase your online presence and drive conversions.</p>
+        <ul>
+          <li>SEO & SEM</li>
+          <li>Social Media</li>
+          <li>Analytics Setup</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
